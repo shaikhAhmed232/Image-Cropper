@@ -1,38 +1,68 @@
-.App {
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  width: 70%;
+  max-width: 800px;
+  margin: auto;
   text-align: center;
+  padding: 2em 0;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container input {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-container button {
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0.7em 1.6em;
+  border: none;
+  background: none;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.image-container {
+  height: 90%;
+  margin: 2rem 0;
+}
+
+.cropper-container {
+  height: 90%;
+  position: relative;
+}
+
+.slider {
+  width: 80%;
+  height: 10%;
+  margin: 0 auto;
+}
+
+.slider input {
+  width: 100%;
+}
+
+.download-btn {
+  background: transparent;
+  font-weight: 500 !important;
+  font-size: 0.9rem;
+  padding: 1em 1.6em;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 1rem;
 }
